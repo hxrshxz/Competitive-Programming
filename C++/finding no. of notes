@@ -1,0 +1,35 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+
+  int money;
+  cin >> money;
+
+  int rs100, rs50, rs20, rs1;
+
+  switch (1) {
+
+  case 1:
+    rs100 = money / 100;
+    money = money % 100;
+    cout << "Total no. of rs100 notes will be:" << rs100 << endl;
+
+  case 2:
+    rs50 = money / 50;
+    money = money % 50;
+    cout << "Total no. of rs50 notes will be:" << rs50 << endl;
+
+  case 3:
+    rs20 = money / 20;
+    money = money % 20;
+    cout << "Total no. of rs20 notes will be:" << rs20 << endl;
+
+  case 4:
+    rs1 = money / 1;
+    money = money % 1;
+    cout << "Total no. of rs1 notes will be:" << rs1 << endl;
+
+    return 0;
+  }
+}
