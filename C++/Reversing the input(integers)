@@ -1,0 +1,27 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+//Normal case
+  
+  int x;
+  cin>>x;
+  int digit;
+  int ans;
+
+  while(x){
+    
+    digit= x%10;   
+    ans = ans *10 + digit;
+    x = x/10;    
+  }
+  cout<<ans;
+  
+  
+ 
+    
+  
+    
+    
+}
+  
