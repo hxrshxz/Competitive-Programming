@@ -1,0 +1,9 @@
+
+char toLowerCase(char ch){
+
+  if(ch >= 'a' && ch <='z'){
+    return ch;
+  }else{
+    char temp =  'A'- ch + 'a';;
+    return temp;
+  }
