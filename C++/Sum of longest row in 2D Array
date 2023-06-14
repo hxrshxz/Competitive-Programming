@@ -1,0 +1,45 @@
+
+int largestRow(int arr[3][3], int row , int col){
+
+  int maxi = INT_MIN;
+  int rowIndex = -1;
+
+  for(row = 0; row < 3; row++){
+    int sum = 0;
+    for(col = 0; col < 3; col ++){
+          sum = sum + arr[row][col];        
+      }
+    if(sum > maxi){
+      maxi = sum;
+      rowIndex = row;
+   }
+
+    
+  }
+  
+  cout<<maxi<<" ";
+  return rowIndex ;
+
+  
+}
+
+void printSum(int arr[3][3], int row, int col) {
+
+  for (int row = 0; row < 3; row++) {
+    int sum = 0;
+    for (int col = 0; col < 3; col++) {
+      sum = sum + arr[row][col];
+    }
+    cout << sum << " ";
+  }
+  cout << endl;
+}  
+int main() {
+
+  int arr[3][3] = {{3, 4, 11}, {2, 12, 1}, {7, 8, 7}};
+  printSum(arr, 3, 3);
+  
+  cout<<"Max row is at Index : "<<largestRow(arr,3 ,3);
+
+  return 0;
+}
