@@ -40,6 +40,7 @@ int main(){
 
   cout<<"The index key for 12 is : "<<oddIndex<<endl;
   cout<<"The index key for  8 is : "<<evenIndex<<endl;
+  //the index of the array for 12 is oddIndex and Even doing for git test only
   
   
 }
